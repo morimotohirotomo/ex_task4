@@ -52,15 +52,15 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
-  # gem 'selenium-webdriver'
-  # gem 'chromedriver-helper'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
   # Easy installation and use of chromedriver to run system tests with Chrome
   
   # 下の６つのgemを追加する
   gem 'rspec-rails'
   gem "factory_bot_rails"
   gem 'rspec-parameterized'
-  gem 'faker' #ランダム値の生成
+  gem 'faker', '~> 2.0.0'
   gem 'shoulda-matchers'
   gem 'rails-controller-testing'
 end
