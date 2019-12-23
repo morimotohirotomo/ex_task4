@@ -57,10 +57,11 @@ group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   
   # 下の６つのgemを追加する
+  #gem 'webdrivers'
   gem 'rspec-rails'
   gem "factory_bot_rails"
   gem 'rspec-parameterized'
-  gem 'faker', '~> 2.0.0'
+  gem 'faker'
   gem 'shoulda-matchers'
   gem 'rails-controller-testing'
 end
