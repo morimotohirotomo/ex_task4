@@ -1,12 +1,12 @@
 class ApplicationController < ActionController::Base
+
 	before_action :configure_permitted_parameters, if: :devise_controller?
 	#デバイス機能実行前にconfigure_permitted_parametersの実行をする。
 	protect_from_forgery with: :exception
 
   protected
-  #sign_in後のredirect先変更する。マイページを指定。変更しないとrootに飛ぶ。
   def after_sign_in_path_for(resource)
-  	user_path(resource)
+    user_path(resource.id)
   end
 
   #sign_out後のredirect先変更する。rootパスへ。rootパスはhome topを設定済み。
