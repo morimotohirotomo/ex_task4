@@ -36,6 +36,9 @@
 					    <% end %>
 					<% end %>
 					</td>
+					<td>
+						コメント数：
+					</td>
 					<% if @Book.user == current_user %>
 					<td><%= link_to "Edit",edit_book_path(@Book), class: "btn-sm btn-success edit_book_#{@Book.id}" %></td>
 					<td><%= link_to "Destroy",@Book, method: :delete, data: {confirm: "本当に削除してもよろしいですか？"}, class: "btn-sm btn-danger destroy_book_#{@Book.id}" %></td>
